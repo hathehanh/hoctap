@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap');
+:root {
+    --gradient: linear-gradient(90deg, #65ccbe, #0b9d8a);
+}
+
+
+/* Light Mode */
+
+:root {
+    --background: #e1e1e9;
+    --calc-background: #e7e8ee;
+    --calc-shadow: 30px 30px 55px #CCC;
+    --num-background: linear-gradient(to bottom right, #c0c5d1, #edeef5);
+    --num-shadow: inset 2px 2px 3px #ebebf3, inset 4px 4px 15px #cacfd6, 3px 3px 12px #c2c7d4;
+    --eql-background: linear-gradient(to bottom right, #0b9d8a, #65ccbe);
+    --eql-shadow: inset 1px 1px 3px #139c8a, inset 4px 4px 15px #03b79f, inset -1px -1px 3px #06a48f, 3px 3px 5px #c2c7d4;
+    --c-background: linear-gradient(to bottom right, #8b94a1, #eff0f7);
+    --c-shadow: inset 1px 1px 1px #c8ced9, inset 2px 2px 8px #cacfd6, inset -2px -2px 3px #b4bbc7, 3px 3px 12px #c2c7d4;
+    --font-color: #222;
+    --mode-bk: #0025;
+}
+
+
+/* Dark Mode */
+
+[data-theme="dark"] {
+    --calc-background: #1e212a;
+    --calc-shadow: 30px 30px 55px #888;
+    --num-background: linear-gradient(to bottom right, #292d38, #3c3c44);
+    --num-shadow: inset 1px 1px 1px #393c4a, inset 4px 4px 15px #20232d, 3px 3px 5px #181b24;
+    --eql-shadow: inset 1px 1px 2px #39ffe571, inset 4px 4px 15px #009581, 3px 3px 5px #181b24;
+    --c-background: linear-gradient(to bottom right, #494f5c, #6f7587);
+    --c-shadow: inset 1px 1px 1px #656b7b, inset 4px 4px 15px #333942, 3px 3px 5px #181b24;
+    --font-color: #FFF;
+    --mode-bk: #FFF2;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeeeee;
+}
+
+*::selection {
+    background: #0b9d8a;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(#65ccbe, #0b9d8a);
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    place-content: center;
+    font-family: 'Roboto';
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 7%;
+    padding-top: 6rem;
+}
+
+.teacher {
+    text-align: center;
+    background: url(../images/teachers.jfif) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    margin: 10px;
+    color: #fff;
+    background: var(--gradient);
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -100%;
+    background: #fff9;
+    height: 150%;
+    width: 20%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transition: .3s linear;
+    left: 120%;
+}
+
+.download-btn button {
+    text-align: center;
+}
+
+.back-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Caculator */
+
+.calculator {
+    position: relative;
+    width: 250px;
+    height: 530px;
+    text-align: center;
+    ;
+    background-color: var(--calc-background);
+    border-radius: 35px;
+    box-shadow: var(--calc-shadow);
+    color: var(--font-color);
+}
+
+#res {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    font-size: 35px;
+    padding: 0px 12px;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+    background: transparent;
+    font-family: Roboto;
+    text-align: right;
+}
+
+.buttons {
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 12px;
+}
+
+.buttons div {
+    user-select: none;
+    cursor: pointer;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: var(--num-shadow);
+    background: var(--num-background);
+}
+
+#zero {
+    grid-column: 1 / 3;
+}
+
+#add,
+#eql,
+#sub,
+#mul,
+#div {
+    background: var(--eql-background);
+    box-shadow: var(--eql-shadow);
+    color: #FFF;
+}
+
+#c,
+#pers,
+#del {
+    background: var(--c-background);
+    box-shadow: var(--c-shadow);
+}
+
+.mode {
+    position: absolute;
+    cursor: pointer;
+    left: 12px;
+    top: 12px;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    background: var(--mode-bk);
+}
+
+.fa-moon {
+    color: #FFF;
+}
+
+.fa-sun {
+    color: #FFE551;
+}
+
+.wrapper-new {
+    position: relative;
+}
+
+.wrapper-new p {
+    position: relative;
+    display: inline-block;
+    color: #0b9d8a;
+    z-index: 9999;
+    font-size: 48px;
+    margin-bottom: 120px;
+}
+
+
+/* .wrapper-new p::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #151538;
+    z-index: -1;
+    border-radius: 50%;
+    left: -10%;
+    top: -118%;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes shine {
+    0%,
+    100% {
+        box-shadow: 0px 0px 32px -12px #0b9d8a;
+    }
+    50% {
+        box-shadow: 0px 0px 32px 3px #0b9d8a;
+    }
+}
+
+button {
+    background-color: #0b9d8a;
+    padding: 10px 38px;
+    border: 1px solid #A9A9A9;
+    border-radius: 28px;
+    color: #fff;
+    transition: all .2s ease;
+    outline: 0;
+}
+
+button:not(:last-child) {
+    margin-right: 20px;
+}
+
+button:hover,
+button:focus {
+    border-color: #5c5c5c;
+    color: #e5e5e5;
+    box-shadow: 0px 4px 27px -12px #5c5c5c;
+}

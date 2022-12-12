@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="../assets/img/logo.png">
+    <meta name="description" content="Propeller is a front-end responsive framework based on Material design & Bootstrap.">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <title>Lộ Trình Học Toán Cơ Bản</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/study.css">
+    <link rel="stylesheet" href="../assets/css/note.css">
+    <!-- <link rel="stylesheet" href="./css/paint2.css"> -->
+    <link href="../assets/css/study-tab.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/study-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="back">
+        <a href="../home.html"><i class="fa-solid fa-arrow-left"></i> TRỞ LẠI </a>
+        <section>
+            <button class="show-modal">Hướng Dẫn</button>
+            <span class="overlay"></span>
+
+            <div class="modal-box">
+                <!-- <i class="fa-regular fa-circle-check"></i> -->
+                <h2>Cách Học</h2>
+                <h3>Học Theo Từng Bài Được Gộp Thành Từng Chủ Đề Khác Nhau</h3>
+
+                <div class="buttons">
+                    <button class="close-btn">Đã hiểu</button>
+                    <!-- <button>Open File</button> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div class="container">
+        <!-- <div class="scroll-card scroll-z-depth">
+            <div class="scroll-tabs scroll-tabs-bg" scroll="true">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#one" data-toggle="tab">Ngày 1</a></li>
+                    <li><a href="#two" data-toggle="tab">Ngày 2</a></li>
+                    <li><a href="#three" data-toggle="tab">Ngày 3</a></li>
+                    <li><a href="#four" data-toggle="tab">Ngày 4</a></li>
+                    <li><a href="#five" data-toggle="tab">Ngày 5</a></li>
+                    <li><a href="#six" data-toggle="tab">Ngày 6</a></li>
+                    <li><a href="#seven" data-toggle="tab">Ngày 7</a></li>
+                    <li><a href="#eight" data-toggle="tab">Ngày 8</a></li>
+                    <li><a href="#nine" data-toggle="tab">Ngày 9</a></li>
+                    <li><a href="#ten" data-toggle="tab">Ngày 10</a></li>
+                </ul>
+            </div>
+            <div class="scroll-card-body">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="one">
+                        <div class="containerFluid">
+                            <h2>Đại Số & Hình Học</h2>
+                            <div class="accordion">
+                                <div class="icon"></div>
+                                <h5>Đại Số</h5>
+                            </div>
+                            <div class="panel">
+                                <h1>Chương I: CĂN BẬC HAI. CĂN BẬC BA</h1>
+                                <h3>Bài 1: Căn bậc hai</h3>
+                                <h4>A, Lý Thuyết</h4>
+                                <div class="poem">
+                                    <p>Nắng đã có mũ</p>
+                                    <p>Mưa đã có ô</p>
+                                    <p>Cáo chưa có bồ</p>
+                                    <p>Mà “a” đã có “mái”. </p>
+                                    <p>-Cáo Tính Toán-</p>
+                                </div>
+                                <p>
+                                    Tadaaa!!! Chào tất cả các cậu, tớ là Cáo Tính Toán, tớ sinh ra từ những phép toán vô cùng là vi diệu. Hôm nay tớ vừa đi tế lễ thần phật, vừa hay lại bắt gặp “a” trong một tình cảnh vô cùng đặc biệt, thế là tớ liền ngâm ra bài thơ trên.<br>Có
+                                    ai thắc mắc chiếc “mái” của “a” là gì không ạ? Ở lớp dưới ta có học qua một kí hiệu, trong đó “a” được che chở bởi một chiếc trần nhà: <span style="text-decoration: overline">a</span>( biểu thị đây là một số có chữ
+                                    số a). Vậy chiếc “mái” này có điểm gì khác với chiếc “trần nhà” kia? <br>Bài học hôm nay, Cáo và các cậu sẽ đi sâu vào tìm hiểu tường tận chiếc “mái” của “a”!
+                                </p>
+                                <h6>1, Căn bậc hai số học</h6>
+                                <p>Ở lớp 7, ta đã được học:<br>- Căn bậc hai của một số a không âm là số x sao cho x<sup>2</sup> = a <br>=> Kí hiệu hoá, ta có: √<span style="text-decoration: overline">a</span>=x với x<sup>2</sup> = a<br>Ví dụ: √<span style="text-decoration: overline">16</span>=4
+                                    ( vì 4<sup>2</sup> = 16) & √<span style="text-decoration: overline">25</span>=5 ( vì 5<sup>2</sup> = 25)</p>
+                                <p>*Ghi Chú: Phần chữ Được Tô Khác Biệt Dưới Này Có Thế Đọc Hoặc Không Đọc</p>
+                                <div class="note-new">
+                                    <p> Đó, chính nó! Căn bậc hai của a, chính là cái “mái” của a. Cáo sẽ ví von một chút. Các cậu cứ tưởng tượng, dấu căn bậc hai trên là một cái mái hiên thần kì vô cùng hiển linh. Hễ bất kì giá trị nào bước chân vào mái
+                                        hiên này, như là anh “x” chả hạn. Thì lập tức, một luồng sinh khí tuôn trào, tâm hồn gột rửa tạp niệm, và “x” hoá thành hình ảnh “a” đứng dưới mái hiên,với “a” là một bản thể khác của nó. Bản thể này đã vươn lên
+                                        tầm cao mới, nghĩa là khi “x” công hưởng linh hồn (bình phương lên) thì mới bằng “a”. Tức x<sup>2</sup> = a.</p>
+                                </div>
+                                <p>- Khái niệm mới: căn bậc hai số học của một số DƯƠNG a là √<span style="text-decoration: overline">a</span> .<br> - Số 0 cũng được gọi là căn bậc hai số học của 0.
+                                </p>
+                                <div class="note-new">
+                                    <p> Hum…Để dễ nhớ, cậu hãy tưởng tượng. Số 0 luôn là một thực thể thần thánh, mà đã là thần thánh, thì cái mái hiên kia cũng chỉ là đồ cỏn con. Tức là 0 có thể vào, và ra cái mái hiên kia thoải mái mà không hề mất đi giá
+                                        trị ban đầu :</p>
+                                </div>
+                                <p>√<span style="text-decoration: overline">0</span>=0</p>
+                                <h6>2, So sánh các căn bậc hai số học. </h6>
+                                <p>- Với hai số a và b KHÔNG ÂM, ta có:</p>
+                                <p>a &lt; b &hArr; √<span style="text-decoration: overline">a</span> &lt; √<span style="text-decoration: overline">b</span></p>
+                                <p>Đến Mục Bài Tập Ở Trang Chủ Để Làm Bài Tập Nha!</p>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="icon"></div>
+                                <h5>Hình Học</h5>
+                            </div>
+                            <div class="panel">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                            <div class="accordion">
+                                <div class="icon"></div>
+                                <h5>Tổng Kết Ngày</h5>
+                            </div>
+                            <div class="panel">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="icon"></div>
+                                <h5>Cùng Fox Giải Trí!</h5>
+                            </div>
+                            <div class="panel">
+                                <main class="background">
+                                    <section class="title">
+                                        <h1>X & O</h1>
+                                    </section>
+                                    <section class="display">
+                                        Đến Lượt <span class="display-player playerX">X</span> Chơi
+                                    </section>
+                                    <section class="container-entertaiment">
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                        <div class="tile"></div>
+                                    </section>
+                                    <section class="display announcer hide"></section>
+                                    <section class="controls">
+                                        <button id="reset">Tạo Lại</button>
+                                    </section>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="two">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam. maiores id ipsam.empore consequatur
+                        quis totam similique reprehenderit soluta ducimus maxime dicta eius, min maiores id ipsam.empore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, min maiores id ipsam.empore consequatur quis totam
+                        similique reprehenderit soluta ducimus maxime dicta eius, min
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="three">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitiaus magnam quia
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="four">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel facere perferendis tipsa mollitia maiores id ipsam.s id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perfere
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="five">
+                        Lorem, ndis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vs id ipsam.Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. V
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="six">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maioreel facere perferendis tempore consequatur quis
+                        totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="seven">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis
+                        tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="eight">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel facere perferendismaiores id ipsam.
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="nine">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique maiores id ipsam.
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="ten">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel facere perferendis tempore consequatur quis totam similique reprehenderit soluta ducimus maxime dicta eius, minus magnam quia ipsa mollitia maiores id ipsam.
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="containerFluid">
+            <h2>KHÓA HỌC TOÁN 9</h2>
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Đại Số</h5>
+            </div>
+            <div class="panel">
+                <h1>Chương I: CĂN BẬC HAI. CĂN BẬC BA</h1>
+                <h3>Bài 1: Căn bậc hai</h3>
+                <h4>A, Lý Thuyết</h4>
+                <div class="poem">
+                    <p>Nắng đã có mũ</p>
+                    <p>Mưa đã có ô</p>
+                    <p>Cáo chưa có bồ</p>
+                    <p>Mà “a” đã có “mái”. </p>
+                    <p>-Cáo Tính Toán-</p>
+                </div>
+                <p>
+                    Tadaaa!!! Chào tất cả các cậu, tớ là Cáo Tính Toán, tớ sinh ra từ những phép toán vô cùng là vi diệu. Hôm nay tớ vừa đi tế lễ thần phật, vừa hay lại bắt gặp “a” trong một tình cảnh vô cùng đặc biệt, thế là tớ liền ngâm ra bài thơ trên.<br>Có
+                    ai thắc mắc chiếc “mái” của “a” là gì không ạ? Ở lớp dưới ta có học qua một kí hiệu, trong đó “a” được che chở bởi một chiếc trần nhà: <span style="text-decoration: overline">a</span>( biểu thị đây là một số có chữ số a). Vậy chiếc
+                    “mái” này có điểm gì khác với chiếc “trần nhà” kia? <br>Bài học hôm nay, Cáo và các cậu sẽ đi sâu vào tìm hiểu tường tận chiếc “mái” của “a”!
+                </p>
+                <h6>1, Căn bậc hai số học</h6>
+                <p>Ở lớp 7, ta đã được học:<br>- Căn bậc hai của một số a không âm là số x sao cho x<sup>2</sup> = a <br>=> Kí hiệu hoá, ta có: √<span style="text-decoration: overline">a</span>=x với x<sup>2</sup> = a<br>Ví dụ: √<span style="text-decoration: overline">16</span>=4
+                    ( vì 4<sup>2</sup> = 16) & √<span style="text-decoration: overline">25</span>=5 ( vì 5<sup>2</sup> = 25)</p>
+                <p>*Ghi Chú: Phần chữ Được Tô Khác Biệt Dưới Này Có Thế Đọc Hoặc Không Đọc</p>
+                <div class="note-new">
+                    <p> Đó, chính nó! Căn bậc hai của a, chính là cái “mái” của a. Cáo sẽ ví von một chút. Các cậu cứ tưởng tượng, dấu căn bậc hai trên là một cái mái hiên thần kì vô cùng hiển linh. Hễ bất kì giá trị nào bước chân vào mái hiên này, như là
+                        anh “x” chả hạn. Thì lập tức, một luồng sinh khí tuôn trào, tâm hồn gột rửa tạp niệm, và “x” hoá thành hình ảnh “a” đứng dưới mái hiên,với “a” là một bản thể khác của nó. Bản thể này đã vươn lên tầm cao mới, nghĩa là khi “x” công
+                        hưởng linh hồn (bình phương lên) thì mới bằng “a”. Tức x<sup>2</sup> = a.</p>
+                </div>
+                <p>- Khái niệm mới: căn bậc hai số học của một số DƯƠNG a là √<span style="text-decoration: overline">a</span> .<br> - Số 0 cũng được gọi là căn bậc hai số học của 0.
+                </p>
+                <div class="note-new">
+                    <p> Hum…Để dễ nhớ, cậu hãy tưởng tượng. Số 0 luôn là một thực thể thần thánh, mà đã là thần thánh, thì cái mái hiên kia cũng chỉ là đồ cỏn con. Tức là 0 có thể vào, và ra cái mái hiên kia thoải mái mà không hề mất đi giá trị ban đầu :</p>
+                </div>
+                <p>√<span style="text-decoration: overline">0</span>=0</p>
+                <h6>2, So sánh các căn bậc hai số học. </h6>
+                <p>- Với hai số a và b KHÔNG ÂM, ta có:</p>
+                <p>a &lt; b &hArr; √<span style="text-decoration: overline">a</span> &lt; √<span style="text-decoration: overline">b</span></p>
+                <p>Đến Mục Bài Tập Ở Trang Chủ Để Làm Bài Tập Nha!</p>
+            </div>
+
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Hình Học</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Tổng Kết Ngày</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Cùng Fox Giải Trí!</h5>
+            </div>
+            <div class="panel">
+                <main class="background">
+                    <section class="title">
+                        <h1>X & O</h1>
+                    </section>
+                    <section class="display">
+                        Đến Lượt <span class="display-player playerX">X</span> Chơi
+                    </section>
+                    <section class="container-entertaiment">
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                    </section>
+                    <section class="display announcer hide"></section>
+                    <section class="controls">
+                        <button id="reset">Tạo Lại</button>
+                    </section>
+                </main>
+            </div>
+        </div> -->
+        <div class="container-pro">
+            <ul class="tab-menu">
+                <li class="active-plus" data-target="home"><i class='bx bx-home-alt'></i> Đại Số</li>
+                <li data-target="contact"><i class='bx bx-phone'></i> Hình Học</li>
+                <li class="dropdown-toggle">
+                    <i class='bx bx-user-circle'></i> Bài Tập <i class='bx bx-chevron-down'></i>
+                    <ul class="dropdown">
+                        <li data-target="action">Tổng Hợp</li>
+                        <li data-target="actional">Đại Số</li>
+                        <li data-target="link">Hình Học</li>
+                        <!-- <li data-target="do-something">Do something</li> -->
+                    </ul>
+                </li>
+                <!-- <li data-target="settings"><i class='bx bx-cog'></i> Settings</li> -->
+                <span class="line"></span>
+            </ul>
+            <div class="contents">
+                <div class="content-pro active-plus" id="home">
+                    <div class="container-plus">
+                        <div class="wrapper-pro">
+                            <ul class="indicator">
+                                <li class="active-max" data-target="#home-new"><i class="ph-house"></i> Bài 1</li>
+                                <li data-target="#profile-new"><i class="ph-user-circle"></i> Bài 2</li>
+                                <li data-target="#contact-new"><i class="ph-phone"></i> Bài 3</li>
+                                <li data-target="#settings-new"><i class="ph-gear-six"></i> Settings</li>
+                            </ul>
+                            <ul class="content-plus">
+                                <li class="active-max" id="home-new">
+                                    <h1>Chương I: CĂN BẬC HAI. CĂN BẬC BA</h1>
+                                    <h3>Bài 1: Căn bậc hai</h3>
+                                    <h4>A, Lý Thuyết</h4>
+                                    <div class="poem">
+                                        <p>Nắng đã có mũ</p>
+                                        <p>Mưa đã có ô</p>
+                                        <p>Cáo chưa có bồ</p>
+                                        <p>Mà “a” đã có “mái”. </p>
+                                        <p>-Cáo Tính Toán-</p>
+                                    </div>
+                                    <p>
+                                        Tadaaa!!! Chào tất cả các cậu, tớ là Cáo Tính Toán, tớ sinh ra từ những phép toán vô cùng là vi diệu. Hôm nay tớ vừa đi tế lễ thần phật, vừa hay lại bắt gặp “a” trong một tình cảnh vô cùng đặc biệt, thế là tớ liền ngâm ra bài thơ trên.<br>Có
+                                        ai thắc mắc chiếc “mái” của “a” là gì không ạ? Ở lớp dưới ta có học qua một kí hiệu, trong đó “a” được che chở bởi một chiếc trần nhà: <span style="text-decoration: overline">a</span>( biểu thị đây là một số có
+                                        chữ số a). Vậy chiếc “mái” này có điểm gì khác với chiếc “trần nhà” kia? <br>Bài học hôm nay, Cáo và các cậu sẽ đi sâu vào tìm hiểu tường tận chiếc “mái” của “a”!
+                                    </p>
+                                    <h6>1, Căn bậc hai số học</h6>
+                                    <p>Ở lớp 7, ta đã được học:<br>- Căn bậc hai của một số a không âm là số x sao cho x<sup>2</sup> = a <br>=> Kí hiệu hoá, ta có: √<span style="text-decoration: overline">a</span>=x với x<sup>2</sup> = a<br>Ví dụ: √
+                                        <span style="text-decoration: overline">16</span>=4 ( vì 4<sup>2</sup> = 16) & √<span style="text-decoration: overline">25</span>=5 ( vì 5<sup>2</sup> = 25)</p>
+                                    <p>*Ghi Chú: Phần chữ Được Tô Khác Biệt Dưới Này Có Thế Đọc Hoặc Không Đọc</p>
+                                    <div class="note-new">
+                                        <p> Đó, chính nó! Căn bậc hai của a, chính là cái “mái” của a. Cáo sẽ ví von một chút. Các cậu cứ tưởng tượng, dấu căn bậc hai trên là một cái mái hiên thần kì vô cùng hiển linh. Hễ bất kì giá trị nào bước chân vào
+                                            mái hiên này, như là anh “x” chả hạn. Thì lập tức, một luồng sinh khí tuôn trào, tâm hồn gột rửa tạp niệm, và “x” hoá thành hình ảnh “a” đứng dưới mái hiên,với “a” là một bản thể khác của nó. Bản thể này đã
+                                            vươn lên tầm cao mới, nghĩa là khi “x” công hưởng linh hồn (bình phương lên) thì mới bằng “a”. Tức x<sup>2</sup> = a.</p>
+                                    </div>
+                                    <p>- Khái niệm mới: căn bậc hai số học của một số DƯƠNG a là √<span style="text-decoration: overline">a</span> .<br> - Số 0 cũng được gọi là căn bậc hai số học của 0.
+                                    </p>
+                                    <div class="note-new">
+                                        <p> Hum…Để dễ nhớ, cậu hãy tưởng tượng. Số 0 luôn là một thực thể thần thánh, mà đã là thần thánh, thì cái mái hiên kia cũng chỉ là đồ cỏn con. Tức là 0 có thể vào, và ra cái mái hiên kia thoải mái mà không hề mất đi
+                                            giá trị ban đầu :</p>
+                                    </div>
+                                    <p>√<span style="text-decoration: overline">0</span>=0</p>
+                                    <h6>2, So sánh các căn bậc hai số học. </h6>
+                                    <p>- Với hai số a và b KHÔNG ÂM, ta có:</p>
+                                    <p>a &lt; b &hArr; √<span style="text-decoration: overline">a</span> &lt; √<span style="text-decoration: overline">b</span></p>
+                                    <p>Đến Mục Bài Tập Ở Trang Chủ Để Làm Bài Tập Nha!</p>
+                                </li>
+                                <li id="profile-new">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                                <li id="contact-new">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                                <li id="settings-new">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-pro" id="action">
+                    <h2>Làm Bài Tập Cùng Fox Nào</h2>
+                    <!-- <div class="wrapper">
+                    <div id="search-container">
+                        <input type="search" id="search-input" placeholder="Thời Điểm Của Sự Kiện, Tên Sự Kiện, Tên Nhân Vật Lịch Sử,...">
+                        <button id="search">Tìm Kiếm</button>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-value">Tất Cả</div>
+                        <div class="button-value">Sự Kiện</div>
+                        <div class="button-value">Nhân Vật</div>
+                    </div>
+                    <div id="products"></div>
+                </div> -->
+                    <div class="container-new">
+                        <div id="search-container">
+                            <input type="search" id="menu_search" placeholder="Tìm Kiếm Bài Tập" onkeyup="searchfunc()">
+                        </div>
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <a href="bai-1.html">Bài 1: Căn thức</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 1: Một số hệ thức về cạnh và đường cao trong tam giác vuông</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 3</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 4</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 5</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-pro" id="actional">
+                    <h2>Làm Bài Tập Cùng Fox Nào</h2>
+                    <div class="container-new">
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <a href="bai-1.html">Bài 1: Căn thức</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 2</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 3</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 4</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 5</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-pro" id="link">
+                    <h2>Làm Bài Tập Cùng Fox Nào</h2>
+                    <!-- <div class="wrapper">
+                    <div id="search-container">
+                        <input type="search" id="search-input" placeholder="Thời Điểm Của Sự Kiện, Tên Sự Kiện, Tên Nhân Vật Lịch Sử,...">
+                        <button id="search">Tìm Kiếm</button>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-value">Tất Cả</div>
+                        <div class="button-value">Sự Kiện</div>
+                        <div class="button-value">Nhân Vật</div>
+                    </div>
+                    <div id="products"></div>
+                </div> -->
+                    <div class="container-new">
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <a href="bai-1.html">Bài 1: Một số hệ thức về cạnh và đường cao trong tam giác vuông</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 2</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 3</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 4</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html">Bài 5</a>
+                            </li>
+                            <hr>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="./warn.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="content" id="do-something">
+                    <h2>Do something</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, debitis id. Aliquam minus ut, officiis nihil. Est adipisci necessitatibus, minima.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus ipsa animi rerum nostrum sapiente ducimus repudiandae aut minima voluptatibus.</p>
+                </div> -->
+                <div class="content-pro" id="contact">
+                    <div class="container-plus">
+                        <div class="wrapper-pro">
+                            <ul class="indicator">
+                                <li class="active-max" data-target="#home-pro"><i class="ph-house"></i> Bài 1</li>
+                                <li data-target="#profile-pro"><i class="ph-user-circle"></i> Bài 2</li>
+                                <li data-target="#contact-pro"><i class="ph-phone"></i> Bài 3</li>
+                                <li data-target="#settings-pro"><i class="ph-gear-six"></i> Settings</li>
+                            </ul>
+                            <ul class="content-plus">
+                                <li class="active-max" id="home-pro">
+                                    <h1>Chương I: - Hệ Thức Lượng Trong Tam Giác Vuông</h1>
+                                    <h3>Bài 1: Một số hệ thức về cạnh và đường cao trong tam giác vuông</h3>
+                                    <h4>A, Lý Thuyết</h4>
+                                    <p>
+                                        Tadaaaa!!! Cáo đã trở lại rồi đây!!! Nay nhà Cáo đang gặp một vấn đề cực kì nghiêm trọng, đó chính là chuyện nhà đất. Hum…Nhắc đến thôi cũng đã thấy rắc rối rồi nhỉ? Cụ thể là như này: <br>Nhà tớ và nhà hàng xóm
+                                        là ông B, đang xảy ra mâu thuẫn vì bức tường nhà của hai bên. Ông ta tự nhiên mướn người tới đo đạc, rồi kiện tớ xây tường nhà dài hơn mức đã đặt ra trước đó. Đương nhiên, Cáo đây đẹp chứ đâu có ngu, tớ liền bật
+                                        lại ông ta. Nhưng ổng khôn lắm, cứ lấy số liệu đo đạc bằng máy móc ra đe doạ tớ, nhưng tớ biết thừa số liệu có thể chỉnh sửa được, ổng hãm hại tớ mà. Khổ nổi tớ lại chỉ đủ tiền để mà thực hiện đo một đoạn thôi,
+                                        liệu có đủ để phản bác ông ta không nhỉ?
+                                    </p>
+                                    <p>Thì, tường nhà Cáo ( tạm đặt là đoạn c) và nhà ông B ( tạm đặt là đoạn b) tạo với nhau một góc 90°. Hai mép tường không giao nhau thì cắt mặt đường Quốc Lộ 1A ( tạm đặt là đoạn a). Ngoài ra, để tiện tính toán, Cáo đã
+                                        rạch thêm một đường vuông góc từ điểm giao nhau giữ hai mép tường đến đường Quốc Lộ 1A ( tạm đặt là đoạn h). Khi đó, đoạn h chia đoạn đường a thành hai phần, một phần bên phía tường nhà Cáo ( tạm đặt là c’), một
+                                        phần bên tường nhà ông B ( tạm đặt là b’). Ta có hình vẽ:</p>
+                                    <div class="exam-picture">
+                                        <img src="../assets/img/hinh-ve-01.png" alt="">
+                                    </div>
+                                    <p>Ở bài học ngày hôm nay, chúng ta sẽ học cách tính các đoạn bằng các công thức mà không cần phải đo đạc tất cả. Nào, chúng ta cùng nhau học để giúp Cáo lật ngược thế cờ với ông B nhé?</p>
+                                    <h6>1, Định lý 1:</h6>
+                                    <div class="exam-picture">
+                                        <img src="../assets/img/hinh-ve-02.png" alt="">
+                                    </div>
+                                    <p>Cho hình vẽ trên, ta xét hai tam giác vuông BAC và AHC: <br>&#8736;(BAC) ̂= &#8736;(AHC) ̂(=90°) <br>&#8736;(BCA) chung <br> Do đó, ∆BAC ∽ ∆AHC (g-g)</p>
+                                    <p>Suy ra: AC/HC=BC/AC &#8660; AC.AC = HC.BC &#8660; AC<sup>2</sup> = HC . BC</p>
+                                    <p>Từ đó, ta có: b<sup>2</sup> = b’.a</p>
+                                    <p>Tương tự: c<sup>2</sup> = c’.a</p>
+                                    <p>Vậy, ta phát biểu định lý 1: Trong một tam giác vuông, bình phương mỗi cạnh góc vuông bằng tích của cạnh huyền và hình chiếu của cạnh góc vuông đó trên cạnh huyền.</p>
+                                    <p>* Hình chiếu: Ở hình 1, b’ chính là hình chiếu của cạnh góc vuông b trên cạnh huyền a. Tương tự, c’ chính là hình chiếu của cạnh góc vuông c, trên cạnh huyền a</p>
+                                    <p>*Ghi Chú: Phần chữ Được Tô Khác Biệt Dưới Này Có Thế Đọc Hoặc Không Đọc</p>
+                                    <div class="note-new">
+                                        <p> Như vậy, ta chỉ cần đo đạc ở đoạn đường Quốc Lộ ( đoạn a, b’ và c’) là đã có thể tính được độ dài tường nhà ông B cũng như tường nhà Cáo rồi! Cách làm như này nè:</p>
+                                        <p>Ta có công thức: b<sup>2</sup> = b’.a &#8660; b = √<span style="text-decoration: overline">b'.a</span> <br> c<sup>2</sup> = c’.a &#8660; b = √<span style="text-decoration: overline">c'.a</p>
+                                    </div>
+                                </li>
+                                <li id="profile-pro">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                                <li id="contact-pro">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                                <li id="settings-pro">
+                                    <h1>Bạn Không Thể Xem Nội Dung Này!</h1>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="content" id="settings">
+                    <h2>Settings</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, debitis id. Aliquam minus ut, officiis nihil. Est adipisci necessitatibus, minima.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quisquam harum dolores accusantium temporibus, cumque maiores iusto tempore repellat dicta hic quidem illum ullam animi architecto eos ipsum tenetur sint.</p>
+                </div> -->
+                </div>
+            </div>
+            <div class="popup-box">
+                <div class="popup">
+                    <div class="content">
+                        <header>
+                            <p></p>
+                            <i class="uil uil-times"></i>
+                        </header>
+                        <form action="#">
+                            <div class="row title">
+                                <label>Tiêu Đề</label>
+                                <input type="text" spellcheck="false">
+                            </div>
+                            <div class="row description">
+                                <label>Mô Tả</label>
+                                <textarea spellcheck="false"></textarea>
+                            </div>
+                            <button></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <li class="add-box">
+                    <div class="icon"><i class="uil uil-plus"></i></div>
+                    <p>Tạo Ghi Chú</p>
+                </li>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" language="javascript" src="../assets/js/tab-scrollable.js"></script>
+<script src="../assets/js/study-tab.js"></script>
+<script src="../assets/js/study.js"></script>
+<script src="../assets/js/note.js"></script>
+<!-- <script src="js/dist-pickr.min.js"></script>
+<script src="js/dist-pickr.es5.min.js"></script>
+<script src="js/.-5042-app3.js"></script>
+<script src="js/2.1.3-jquery.min.js"></script>
+<script src="js/1.11.2-jquery-ui.min.js"></script> -->
+
+
+
+
+
+
+<!-- <script>
+    $(document).ready(function() {
+        $(window).on("load", function() {
+            $(".load").fadeOut("slow");
+        });
+
+        jQuery.fn.pickify = function() {
+            return this.each(function() {
+                $picker = $(this);
+                $icon = $picker.children(".icon");
+                $input = $picker.children("input.change");
+                $board = $picker.children(".board");
+                $choice = $board.children();
+                $rainbow = $picker.children(".rainbow");
+
+                var colors = $picker.attr("data-hsv").split(",");
+                $picker.data("hsv", {
+                    h: colors[0],
+                    s: colors[1],
+                    v: colors[2]
+                });
+                var hex =
+                    "#" +
+                    rgb2hex(hsv2rgb({
+                        h: colors[0],
+                        s: colors[1],
+                        v: colors[2]
+                    }));
+                $input.val(hex);
+                $icon.css("background-color", hex);
+                // making things happen
+                $rainbow.slider({
+                    value: colors[0],
+                    orientation: "vertical",
+                    min: 0,
+                    max: 360,
+                    slide: function(event, ui) {
+                        changeHue(ui.value);
+                    },
+                    stop: function() {
+                        changeColour($picker.data("hsv"), true);
+                    },
+                });
+                $choice.draggable({
+                    containment: ".board",
+                    cursor: "default",
+                    create: function() {
+                        $choice.css({
+                            left: colors[1] * 1.8,
+                            top: 180 - colors[2] * 1.8,
+                        });
+                    },
+                    drag: function(event, ui) {
+                        changeSatVal(ui.position.left, ui.position.top);
+                    },
+                    stop: function() {
+                        changeColour($picker.data("hsv"), true);
+                    },
+                });
+                $board.on("click", function(e) {
+                    var left = e.pageX - $board.offset().left;
+                    var top = e.pageY - $board.offset().top;
+                    $choice.css({
+                        left: left,
+                        top: top
+                    });
+                    changeSatVal(left, top);
+                    changeColour($picker.data("hsv"), true);
+                });
+
+                // drag var actions
+                function changeHue(hue) {
+                    $board.css("background-color", "hsl(" + hue + ",100%,50%)");
+                    var hsv = $picker.data("hsv");
+                    hsv.h = hue;
+                    changeColour(hsv);
+                }
+
+                function changeSatVal(sat, val) {
+                    sat = Math.floor(sat / 1.8);
+                    val = Math.floor(100 - val / 1.8);
+                    var hsv = $picker.data("hsv");
+                    hsv.s = sat;
+                    hsv.v = val;
+                    changeColour(hsv);
+                }
+
+                // changing the colours
+                function changeColour(hsv, restyle, hex) {
+                    var rgb = hsv2rgb(hsv);
+                    if (!hex) {
+                        var hex = rgb2hex(rgb);
+                    }
+                    $picker.data("hsv", hsv).data("hex", hex).data("rgb", rgb);
+                    $icon.css("background-color", "#" + hex);
+                    $input.val("#" + hex);
+                    if (restyle) {
+                        changeStyle(rgb);
+                    }
+                }
+
+                function changeStyle(rgb) {
+                    var rgb = "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
+                }
+
+                // input change
+                $input.keyup(function(e) {
+                    if (e.which != (37 || 39)) {
+                        inputChange($input.val());
+                    }
+                });
+
+                function inputChange(val) {
+                    var hex = val.replace(/[^A-F0-9]/gi, "");
+                    if (hex.length > 6) {
+                        hex = hex.slice(0, 6);
+                    }
+                    $input.val("#" + hex);
+                    if (hex.length == 6) {
+                        inputColour(hex);
+                    }
+                }
+
+                function inputColour(hex) {
+                    var hsv = hex2hsv(hex);
+                    $icon.css("background-color", "#" + hex);
+                    $choice.css({
+                        left: hsv.s * 1.8,
+                        top: 180 - hsv.v * 1.8,
+                    });
+                    $rainbow.children().css("bottom", hsv.h / 3.6 + "%");
+                    $board.css("background-color", "hsl(" + hue + ",100%,50%)");
+                    changeColour(hsv, true, hex);
+                }
+
+                function hex2hsv(hex) {
+                    var r = parseInt(hex.substring(0, 2), 16) / 255;
+                    var g = parseInt(hex.substring(2, 4), 16) / 255;
+                    var b = parseInt(hex.substring(4, 6), 16) / 255;
+                    var max = Math.max.apply(Math, [r, g, b]);
+                    var min = Math.min.apply(Math, [r, g, b]);
+                    var chr = max - min;
+                    hue = 0;
+                    val = max;
+                    sat = 0;
+                    if (val > 0) {
+                        sat = chr / val;
+                        if (sat > 0) {
+                            if (r == max) {
+                                hue = 60 * ((g - min - (b - min)) / chr);
+                                if (hue < 0) {
+                                    hue += 360;
+                                }
+                            } else if (g == max) {
+                                hue = 120 + 60 * ((b - min - (r - min)) / chr);
+                            } else if (b == max) {
+                                hue = 250 + 60 * ((r - min - (g - min)) / chr);
+                            }
+                        }
+                    }
+                    return {
+                        h: hue,
+                        s: Math.round(sat * 100),
+                        v: Math.round(val * 100),
+                    };
+                }
+
+                function hsv2rgb(hsv) {
+                    h = hsv.h;
+                    s = hsv.s;
+                    v = hsv.v;
+                    var r, g, b;
+                    var i;
+                    var f, p, q, t;
+                    h = Math.max(0, Math.min(360, h));
+                    s = Math.max(0, Math.min(100, s));
+                    v = Math.max(0, Math.min(100, v));
+                    s /= 100;
+                    v /= 100;
+                    if (s == 0) {
+                        r = g = b = v;
+                        return {
+                            r: Math.round(r * 255),
+                            g: Math.round(g * 255),
+                            b: Math.round(b * 255),
+                        };
+                    }
+                    h /= 60;
+                    i = Math.floor(h);
+                    f = h - i; // factorial part of h
+                    p = v * (1 - s);
+                    q = v * (1 - s * f);
+                    t = v * (1 - s * (1 - f));
+                    switch (i) {
+                        case 0:
+                            r = v;
+                            g = t;
+                            b = p;
+                            break;
+                        case 1:
+                            r = q;
+                            g = v;
+                            b = p;
+                            break;
+                        case 2:
+                            r = p;
+                            g = v;
+                            b = t;
+                            break;
+                        case 3:
+                            r = p;
+                            g = q;
+                            b = v;
+                            break;
+                        case 4:
+                            r = t;
+                            g = p;
+                            b = v;
+                            break;
+                        default:
+                            r = v;
+                            g = p;
+                            b = q;
+                    }
+                    return {
+                        r: Math.round(r * 255),
+                        g: Math.round(g * 255),
+                        b: Math.round(b * 255),
+                    };
+                }
+
+                function rgb2hex(rgb) {
+                    function hex(x) {
+                        return ("0" + parseInt(x).toString(16)).slice(-2);
+                    }
+                    return hex(rgb.r) + hex(rgb.g) + hex(rgb.b);
+                }
+            });
+        };
+        $(".picker").pickify();
+    });
+
+    $("#setColor").click(function() {
+        $("#picker").attr("data-color", $input.val());
+    });
+    $("#picker").click(function() {
+        $("#picker").attr("data-color", $input.val());
+    });
+</script>
+<span id="szmtr"></span>
+                                            <script>
+                                                document.write('<scr' + 'ipt src="https://szm.com/reklamatr.phtml?URL=' + document.location.href + '" type="text/javascript">' + 'ript>');
+                                            </script>
+                                            <span id="szmad"></span>
+                                            <script>
+                                                document.write('<scr' + 'ipt src="https://szm.com/reklamafr.phtml?URL=' + document.location.href + '" type="text/javascript">' + 'ript>');
+                                            </script> -->
+                                            <script>
+                                                const section = document.querySelector("section"),
+                                                    overlay = document.querySelector(".overlay"),
+                                                    showBtn = document.querySelector(".show-modal"),
+                                                    closeBtn = document.querySelector(".close-btn");
+
+                                                showBtn.addEventListener("click", () => section.classList.add("active"));
+
+                                                overlay.addEventListener("click", () =>
+                                                    section.classList.remove("active")
+                                                );
+
+                                                closeBtn.addEventListener("click", () =>
+                                                    section.classList.remove("active")
+                                                );
+                                            </script>
+
+</html>

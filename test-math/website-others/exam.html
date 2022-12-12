@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/exam.css">
+    <link rel="stylesheet" href="../assets/css/draft.css">
+    <link rel="stylesheet" href="../assets/css/event.css">
+    <link rel="stylesheet" href="../assets/css/music.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <title>Đề Thi Giữa Học Kì I Lớp 9</title>
+</head>
+
+<body>
+    <div class="back-btn">
+        <a href="../home.html"><button class="btn">Trở Lại</button></a>
+        <hr>
+        <img src="../assets/img/dethigiuaki1-exam-01.png" alt="">
+        <a href="../assets/file/01.docx" download="01" class="download-btn"><button class="btn">Tải Xuống</button></a>
+    </div>
+    <!-- Tab items -->
+    <div class="tabs">
+        <div class="tab-item active-new">
+            <i class="fa-regular fa-lightbulb"></i> Máy Tính Điện Tử
+        </div>
+        <!-- <div class="tab-item">
+            <i class="fa-solid fa-pen-ruler"></i> Nháp Điện Tử
+        </div> -->
+        <div class="tab-item">
+            <i class="fa-solid fa-music"></i> MAFOX Music
+        </div>
+        <div class="tab-item">
+            <i class="fa-sharp fa-solid fa-clock"></i> Đồng Hồ
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Tab content -->
+    <section class="teacher" id="teacher">
+        <div class="tab-content">
+            <div class="tab-pane active-new">
+                <div class="calculator">
+                    <div class="result">
+                        <input type="text" readonly id="res" placeholder="0.0">
+                    </div>
+                    <div class="buttons">
+                        <div id="c" onclick="res.value = ''">C</div>
+                        <div id="del" onclick="res.value = res.value.substring(0, res.value.length - 1)">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </div>
+                        <div id="pers" onclick="res.value += '%'">%</div>
+                        <div id="div" onclick="res.value += '&#247;'">&#247;</div>
+                        <div onclick="res.value += 7">7</div>
+                        <div onclick="res.value += 8">8</div>
+                        <div onclick="res.value += 9">9</div>
+                        <div id="div" onclick="res.value += '&#215;'">&#215;</div>
+                        <div onclick="res.value += 4">4</div>
+                        <div onclick="res.value += 5">5</div>
+                        <div onclick="res.value += 6">6</div>
+                        <div id="sub" onclick="res.value += '-'">-</div>
+                        <div onclick="res.value += 1">1</div>
+                        <div onclick="res.value += 2">2</div>
+                        <div onclick="res.value += 3">3</div>
+                        <div id="add" onclick="res.value += '+'">+</div>
+                        <div id="zero" onclick="res.value += 0">0</div>
+                        <div id="dot" onclick="res.value += '.'">.</div>
+                        <div id="eql" onclick="calc()">=</div>
+                    </div>
+                    <div class="mode" onclick="chMode()">
+                        <i id="mode" class="fa-solid fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tab-pane">
+                <div class="container">
+                    <section class="tools-board">
+                        <div class="row">
+                            <label class="title">Hình Học</label>
+                            <ul class="options">
+                                <li class="option tool" id="rectangle">
+                                    <img src="icons/rectangle.svg" alt="">
+                                    <span>Hình Vuông</span>
+                                </li>
+                                <li class="option tool" id="circle">
+                                    <img src="icons/circle.svg" alt="">
+                                    <span>Hình Tròn</span>
+                                </li>
+                                <li class="option tool" id="triangle">
+                                    <img src="icons/triangle.svg" alt="">
+                                    <span>Hình Tam Giác</span>
+                                </li>
+                                <li class="option">
+                                    <input type="checkbox" id="fill-color">
+                                    <label for="fill-color">Tô Toàn Bộ Hình</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <label class="title">Tiện Ích</label>
+                            <ul class="options">
+                                <li class="option active tool" id="brush">
+                                    <img src="icons/brush.svg" alt="">
+                                    <span>Vẽ</span>
+                                </li>
+                                <li class="option tool" id="eraser">
+                                    <img src="icons/eraser.svg" alt="">
+                                    <span>Xóa</span>
+                                </li>
+                                <li class="option">
+                                    <input type="range" id="size-slider" min="1" max="30" value="5">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row colors">
+                            <label class="title">Màu Sắc</label>
+                            <ul class="options">
+                                <li class="option"></li>
+                                <li class="option selected"></li>
+                                <li class="option"></li>
+                                <li class="option"></li>
+                                <li class="option">
+                                    <input type="color" id="color-picker" value="#0b9d8a">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row buttons">
+                            <button class="clear-canvas">Xóa Toàn Bộ</button>
+                            <button class="save-img">Tải Xuống</button>
+                        </div>
+                    </section>
+                    <section class="drawing-board">
+                        <canvas></canvas>
+                    </section>
+                </div>
+            </div> -->
+            <div class="tab-pane">
+                <div class="wrapper">
+                    <div class="top-bar">
+                        <i class="material-icons">expand_more</i>
+                        <span>Đang Phát</span>
+                        <i class="material-icons">more_horiz</i>
+                    </div>
+                    <div class="img-area">
+                        <img src="" alt="">
+                    </div>
+                    <div class="song-details">
+                        <p class="name"></p>
+                        <p class="artist"></p>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <audio id="main-audio" src=""></audio>
+                        </div>
+                        <div class="song-timer">
+                            <span class="current-time">0:00</span>
+                            <span class="max-duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                        <i id="prev" class="material-icons">skip_previous</i>
+                        <div class="play-pause">
+                            <i class="material-icons play">play_arrow</i>
+                        </div>
+                        <i id="next" class="material-icons">skip_next</i>
+                        <i id="more-music" class="material-icons">queue_music</i>
+                    </div>
+                    <div class="music-list">
+                        <div class="header">
+                            <div class="row">
+                                <i class="list material-icons">queue_music</i>
+                                <span>Danh Sách Phát</span>
+                            </div>
+                            <i id="close" class="material-icons">close</i>
+                        </div>
+                        <ul>
+                            <!-- here li list are coming from js -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="container-new">
+                    <div class="wrapper-new">
+                        <p>
+                            <span class="mins">00</span>:<span class="seconds">00</span>:<span class="tens">00</span>
+                        </p> <br>
+                        <button class="btn-start">Start</button>
+                        <button class="btn-stop">Stop</button>
+                        <button class="btn-reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../assets/js/draft.js"></script>
+<script src="../assets/js/exam.js"></script>
+<script src="../assets/js/event.js"></script>
+<script src="../assets/js/music-list.js"></script>
+<script src="../assets/js/script-music.js"></script>
+<script src="../assets/js/stopwatch.js"></script>
+
+</html>

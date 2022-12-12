@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Toán Cùng Nhau</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/event.css">
+    <!-- <link rel="stylesheet" href="./assets/css/portfolio.css"> -->
+    <link rel="shortcut icon" href="./assets/img/logo.png">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><i class="fas fa-user-graduate"></i> MAFOX</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#course">Kiến Thức</a></li>
+                <li><a href="#baitap">Rèn Luyện</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+        <div id="login" class="fas fa-user-circle"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form  -->
+
+    <div class="login-form">
+
+        <form action="">
+            <h3>Quản Lí Tài Khoản</h3>
+            <!-- <input type="email" placeholder="Tên Đăng Nhập" class="box">
+            <input type="password" placeholder="Mật Khẩu" class="box">
+            <p>Quên Mật Khẩu?<a href="#">Tại Đây</a></p>
+            <p>Bạn Không Có Tài Khoản<a href="#">Đăng Kí Ngay</a></p>
+            <input type="submit" class="btn" value="Đăng Nhập"> -->
+            <i class="fas fa-times"></i>
+            <div id="user-login"></div>
+            <center class="font-sans text-md font-bold mt-20">
+                <button id="logout-btn" class="hover:shadow-inner hidden bg-yellow-200 px-2 py-1 rounded-md shadow-lg text-yellow-700 mt-5" id="logout" type="submit">Đăng Xuất</button>
+                <button id="delete-btn" class="hover:shadow-inner hidden bg-red-200 px-2 py-1 rounded-md shadow-lg text-red-700 mt-5" id="logout" type="submit">Xóa Tài Khoản</button>
+            </center>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h1>Học Toán Siêu Hay</h1>
+        <p>Chia sẽ kiến thức học Toán - Lộ Trình - Bài Tập</p>
+        <a href="#course"><button class="btn">Học Ngay</button></a>
+
+        <!-- <div class="shape"></div> -->
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="./assets/img/studying-amico.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Chúng Tôi Là Ai?</h3>
+            <p>Nguyễn Tuấn Kiệt - Lớp 9/4 - Trường THCS Hà Thế Hạnh</p>
+            <p>Hoàng Vĩnh Đức Tài - Lớp 9/3 - Trường THCS Hà Thế Hạnh</p>
+            <p style="font-size: 25px;">Giáo Viên Đã Tham Gia Hỗ Trợ Để Dự Án Được Hoàn Thiện</p>
+            <p>Trần Lê Phước Thọ - Dạy Môn Tin Học Tại Trường THCS Hà Thế Hạnh</p>
+            <p style="font-size: 25px;">Người Tham Gia Hỗ Trợ và Đóng Góp Trong Quá Trình Biên Soạn Các Kiến Thức</p>
+            <p>Nguyễn Quang Thắng - Lớp 9/4 - Trường THCS Hà Thế Hạnh</p>
+            <a href="#"><button class="btn">Xem Thêm</button></a>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- course section starts  -->
+
+    <section class="course" id="course">
+
+        <h1 class="heading">Kiến Thức Cần Học</h1>
+
+        <div class="box-container">
+            <a href="./website-others/study/index.html">
+                <div class="box">
+                    <img src="./assets/img/study-banner.png" alt="">
+                    <!-- <h3 class="price">$0</h3> -->
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <a href="./website-others/study/index.html" class="title">Học Toán Cơ Bản</a>
+                        <p>Kiến Thức Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                        <div class="info">
+                            <h3> <i class="far fa-clock"></i> 2 Tiếng/Ngày </h3>
+                            <h3> <i class="far fa-calendar-alt"></i> 15 Ngày </h3>
+                            <h3> <i class="fas fa-book"></i> 30 Bài Học </h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- <div class="box">
+                <img src="images/course2.jpg" alt="">
+                <h3 class="price">$50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">learn front end development</a>
+                    <p>Lộ Trình Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                        <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/course3.jpg" alt="">
+                <h3 class="price">$50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">learn front end development</a>
+                    <p>Lộ Trình Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                        <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/course4.jpg" alt="">
+                <h3 class="price">$50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">learn front end development</a>
+                    <p>Lộ Trình Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                        <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/course5.jpg" alt="">
+                <h3 class="price">$50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">learn front end development</a>
+                    <p>Lộ Trình Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                        <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/course6.jpg" alt="">
+                <h3 class="price">$50</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">learn front end development</a>
+                    <p>Lộ Trình Được Viết Theo Cách Của Gen Z Giúp Tăng Hứng Thú Học Toán Hơn!</p>
+                    <div class="info">
+                        <h3> <i class="far fa-clock"></i> 2 hours </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
+                        <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    </div>
+                </div>
+            </div> -->
+
+    </section>
+
+    <!-- course section ends -->
+
+    <!-- baitap section starts  -->
+
+    <section class="baitap" id="baitap">
+
+        <h1 class="heading">Vận Dụng</h1>
+
+        <div class="container-tabs">
+            <!-- Tab items -->
+            <div class="tabs">
+                <div class="tab-item active-new">
+                    <i class="fa-solid fa-book"></i> Bài Tập Nâng Cao
+                </div>
+                <!-- <div class="tab-item">
+                    <i class="fa-solid fa-book"></i> Bài Tập Nâng Cao
+                </div> -->
+                <div class="tab-item">
+                    <i class="fa-solid fa-file"></i> Đề Kiểm Tra
+                </div>
+                <!-- <div class="tab-item">
+                    <i class="tab-icon fas fa-pen-nib"></i> Vue.JS
+                </div> -->
+                <div class="line"></div>
+            </div>
+
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane active-new">
+                    <h2>Bài Tập Sẽ Có lời Giải</h2>
+                    <p>Bài Tập Được Phân Loại Từ Dễ Đến Khó</p>
+                </div>
+                <!-- <div class="tab-pane">
+                    <h2>Bài Tập Sẽ Có lời Giải</h2>
+                    <p>Bài Tập Được Phân Loại Từ Dễ Đến Khó</p>
+                </div> -->
+                <div class="tab-pane active-new">
+                    <h2>Kiểm Tra Học Kì</h2>
+                    <p>Đề Kiểm Tra Được Chúng Tôi Soạn Và Đều Có Đáp Án</p>
+                    <div class="card">
+                        <a href="./website-others/exam.html">
+                            <img src="./assets/img/dethigiuaki1-01.png" alt="Avatar">
+                            <div class="container-cards">
+                                <h4><b>Đề Thi GIữa Học Kì I Lớp 9 - 001</b></h4>
+                                <p>Ngày Phát Hành: 1/10/2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="tab-pane">
+                    <h2>Vue.js</h2>
+                    <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+                </div> -->
+            </div>
+        </div>
+
+        <a href="#"><button class="btn">Xem Thêm</button></a>
+
+    </section>
+
+    <!-- teacher section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Liên Hệ</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" placeholder="Họ Và Tên" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="password" placeholder="Mật Khẩu" class="box">
+                <input type="number" placeholder="Số Điện Thoại" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="Địa Chỉ"></textarea>
+                <input type="submit" class="btn" value="Gửi">
+            </form>
+
+            <div class="image">
+                <img src="images/contact-img.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Các Địa Chỉ Của MAFOX</h3>
+                <a href="#">Đang Cập Nhật</a>
+                <a href="#">Đang Cập Nhật</a>
+                <a href="#">Đang Cập Nhật</a>
+                <a href="#">Đang Cập Nhật</a>
+            </div>
+
+            <div class="box">
+                <h3>Lối Tắt</h3>
+                <a href="#">Trang Chủ</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Lộ Trình</a>
+                <a href="#">Bài Tập</a>
+                <a href="#">Liên Hệ</a>
+            </div>
+
+            <div class="box">
+                <h3>Địa Chỉ Liên Hệ</h3>
+                <p> <i class="fas fa-map-marker-alt"></i>Đang Cập Nhật</p>
+                <p> <i class="fas fa-envelope"></i>Đang Cập Nhật</p>
+                <p> <i class="fas fa-phone"></i>Đang Cập Nhật</p>
+            </div>
+
+        </div>
+
+        <h1 class="credit"><a href="#">Được Thành Lập Vào Năm 2022</a></h1>
+
+    </div>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/tailwind.js"></script>
+    <script src="js/index.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/event.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
+
+</body>
+
+</html>
