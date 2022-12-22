@@ -26,11 +26,11 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(3500); //calling startTimer function
+    startTimer(1000); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue = 3500;
+let timeValue = 1000;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +45,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 3500;
+    timeValue = 1000;
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -207,6 +207,6 @@ function startTimerLine(time) {
 
 function queCounter(index) {
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>' + index + '</p>  <p>' + questions.length + '</p> Câu Hỏi</span>';
+    let totalQueCounTag = '<span><p>' + index + '</p> trên <p>' + questions.length + '</p> Câu Hỏi</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag; //adding new span tag inside bottom_ques_counter
 }
