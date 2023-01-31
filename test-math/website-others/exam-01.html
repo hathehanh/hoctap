@@ -21,6 +21,7 @@
     <div class="back-btn">
         <a href="../home.html"><button class="btn">Trở Lại</button></a>
         <hr>
+        <p style="font-size: 15px;">Để xem đáp án bạn hãy bấm vào nút Tải Xuống</p>
         <img src="../assets/img/dethigiuaki1-exam-01.png" alt="">
         <a href="../assets/file/01.docx" download="01" class="download-btn"><button class="btn">Tải Xuống</button></a>
     </div>
@@ -54,7 +55,8 @@
                         <div id="del" onclick="res.value = res.value.substring(0, res.value.length - 1)">
                             <i class="fa-solid fa-delete-left"></i>
                         </div>
-                        <div id="pers" onclick="res.value += '%'">%</div>
+                        <!-- <div id="pers" onclick="res.value += '%'">%</div> -->
+                        <div id="add" onclick="res.value += '+'">+</div>
                         <div id="div" onclick="res.value += '&#247;'">&#247;</div>
                         <div onclick="res.value += 7">7</div>
                         <div onclick="res.value += 8">8</div>

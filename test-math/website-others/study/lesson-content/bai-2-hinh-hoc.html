@@ -424,24 +424,31 @@
                                 <p>Tạo Ghi Chú</p>
                             </li>
                         </div>
-                        <!-- <div class="d-flex align-items-center series mb-4">
-                            <a href="javascript:void();"><img src="images/trending/trending-label.png" class="img-fluid" alt=""></a>
-                            <span class="text-gold ml-3">#2 in Series Today</span>
-                        </div> -->
-                        <ul class="list-inline p-0 mt-4 share-icons music-play-lists">
-                            <li><span><i class="fa fa-plus"></i></span></li>
-                            <li><span><i class="fa fa-heart"></i></span></li>
-                            <li class="share">
-                                <span><i class="fa fa-share-alt"></i></span>
-                                <div class="share-box">
-                                    <div class="d-flex align-items-center">
-                                        <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
-                                        <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
-                                        <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                        <div class="share">
+                            <button class="view-modal"><i class="fa-solid fa-share"></i></button>
+                            <div class="popup-share">
+                                <header>
+                                    <span>Chia Sẽ</span>
+                                    <div class="close"><i class="uil uil-times"></i></div>
+                                </header>
+                                <div class="content">
+                                    <p>Chia Sẽ Với Các Nền Tảng:</p>
+                                    <ul class="icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://web.telegram.org/k/"><i class="fab fa-telegram-plane"></i></a>
+                                    </ul>
+                                    <p>Hoặc Sao Chép Liên Kết:</p>
+                                    <div class="field">
+                                        <i class="url-icon uil uil-link"></i>
+                                        <input type="text" readonly value="https://hathehanh.github.io/hoctap/test-math/website-others/study/lesson-content/bai-2-hinh-hoc.html">
+                                        <button>Sao Chép</button>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -541,7 +548,7 @@
                                                 <div class="badge badge-secondary p-1 mr-2">Basic</div>
                                                 <span class="text-white">1287 Từ</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="./bai-3-hinh-hoc.html">
                                                 <div class="hover-buttons">
                                                     <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
                                             Học Ngay</span>
@@ -578,7 +585,7 @@
                                                 <div class="badge badge-secondary p-1 mr-2">Basic</div>
                                                 <span class="text-white">1435 Từ</span>
                                             </div>
-                                            <a href="#">
+                                            <a href="./on-tap-chuong-hinh-hoc-1.html">
                                                 <div class="hover-buttons">
                                                     <span class="btn btn-hover"><i class="fa fa-play mr-1" aria-hidden="true"></i>
                                             Học Ngay</span>
@@ -609,7 +616,7 @@
                     </div>
                 </div>
             </div>
-        </section>                              
+        </section>
         <section id="iq-upcoming-movie">
             <div class="container-fluid">
                 <div class="row">
@@ -899,6 +906,8 @@
     <script src="./js/note.js"></script>
     <!-- Content Js -->
     <script src="./js/content.js"></script>
+    <!-- Share Js -->
+    <script src="./js/share.js"></script>
 </body>
 
 </html>

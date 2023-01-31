@@ -428,12 +428,21 @@
     #trending-slider-nav .slick-prev {
         right: 37px;
     }
+    .popup-share {
+        margin-left: 170px;
+    }
     footer.footer-one .footer-top {
         padding-top: 30px;
         padding-bottom: 30px;
     }
     footer.footer-one .widget .textwidget p {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .popup-share {
+        margin-left: 300px;
     }
 }
 
@@ -446,6 +455,12 @@
 @media (min-width:576px) {
     .iq-search-bar a.search-toggle {
         display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    .popup-share {
+        margin-left: 700px;
     }
 }
 
