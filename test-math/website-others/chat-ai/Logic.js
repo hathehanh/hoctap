@@ -1,4 +1,3 @@
-// Let's code our chatbot's logic!
 function IsEnter() {
     var TextBox_val = document.getElementById("InputBox").value; // Get all the data from the input box.
 
@@ -32,23 +31,23 @@ function main() {
     else if (FormatInput.includes("đường phân giác là gì") || FormatInput.includes("đường phân giác là gì?") || FormatInput.includes("bạn cho mình hỏi đường phân giác là gì") || FormatInput.includes("thế nào là đường phân giác"))
         ResponseText_val.innerHTML = "Tia phân giác của một góc là tia nằm giữa hai cạnh của góc và tạo với hai cạnh đó 2 góc băng nhau";
 
-    else if (FormatInput.includes("đường cao là gì") || FormatInput.includes("đường cao là gì?") || FormatInput.includes("bạn cho mình hỏi đường cao là gì") || FormatInput.includes("thế nào là đường cao"))
+    else if (FormatInput.includes("đường cao là gì") || FormatInput.includes("đường cao là gì?") || FormatInput.includes("đường cao") || FormatInput.includes("bạn cho mình hỏi đường cao là gì") || FormatInput.includes("thế nào là đường cao"))
         ResponseText_val.innerHTML = "Đường cao của một tam giác là đoạn thẳng kẻ từ một đỉnh và vuông góc với cạnh đối diện";
 
-    else if (FormatInput.includes("đường trung trực là gì") || FormatInput.includes("đường trung trực là gì?") || FormatInput.includes("bạn cho mình hỏi đường trung trực là gì") || FormatInput.includes("thế nào là đường trung trực"))
+    else if (FormatInput.includes("đường trung trực là gì") || FormatInput.includes("đường trung trực là gì?") || FormatInput.includes("đường trung trực") || FormatInput.includes("bạn cho mình hỏi đường trung trực là gì") || FormatInput.includes("thế nào là đường trung trực"))
         ResponseText_val.innerHTML = "Đường thẳng đi qua trung điểm của đoạn thẳng và vuông góc với đoạn thẳng gọi là đường trung trực của đoạn thẳng đó";
 
-    else if (FormatInput.includes("đường trung tuyến là gì") || FormatInput.includes("đường trung tuyến là gì?") || FormatInput.includes("bạn cho mình hỏi đường trung tuyến là gì") || FormatInput.includes("thế nào là đường trung tuyến"))
+    else if (FormatInput.includes("đường trung tuyến là gì") || FormatInput.includes("đường trung tuyến là gì?") || FormatInput.includes("đường trung tuyến") || FormatInput.includes("bạn cho mình hỏi đường trung tuyến là gì") || FormatInput.includes("thế nào là đường trung tuyến"))
         ResponseText_val.innerHTML = "Đường trung tuyến trong tam giác là một đoạn thẳng nối từ đỉnh của tam giác tới trung điểm của cạnh đối diện";
-
-    else if (FormatInput.includes("Ví dụ về khái niệm hàm số") || FormatInput.includes("ví dụ về khái niệm hàm số") || FormatInput.includes("ví dụ khái niệm hàm số") || FormatInput.includes("cho ví dụ về khái niệm hàm số"))
-        ResponseText_val.innerHTML = "Ta có y = 3x + 1 là một hàm số cho dưới dạng công thức. Đây là một hàm số bậc nhất. Nếu x = 0 thì ta có y = 3.0 + 1 = 1. Nếu x = 1 thì ta có y = 3.1 + 1 = 4.";
 
     else if (FormatInput.includes("Ví dụ về hàm số bậc nhất") || FormatInput.includes("ví dụ về hàm số bậc nhất") || FormatInput.includes("ví dụ hàm số bậc nhất") || FormatInput.includes("cho ví dụ về hàm số bậc nhất"))
         ResponseText_val.innerHTML = "Ví dụ: y=2x+3 là hàm số bậc nhất,y=0x+5 không phải là hàm số bậc nhất";
 
+    else if (FormatInput.includes("Ví dụ về khái niệm hàm số") || FormatInput.includes("ví dụ về khái niệm hàm số") || FormatInput.includes("ví dụ khái niệm hàm số") || FormatInput.includes("cho ví dụ về khái niệm hàm số"))
+        ResponseText_val.innerHTML = "Ta có y = 3x + 1 là một hàm số cho dưới dạng công thức. Đây là một hàm số bậc nhất. Nếu x = 0 thì ta có y = 3.0 + 1 = 1. Nếu x = 1 thì ta có y = 3.1 + 1 = 4.";
 
-    else if (FormatInput.includes("trung điểm của đoạn thẳng là gì") || FormatInput.includes("trung điểm là gì") || FormatInput.includes("trung điểm là gì?"))
+
+    else if (FormatInput.includes("trung điểm của đoạn thẳng là gì") || FormatInput.includes("trung điểm là gì") || FormatInput.includes("trung điểm") || FormatInput.includes("trung điểm là gì?"))
         ResponseText_val.innerHTML = "Trung điểm là điểm nằm chính giữa đoạn thẳng, chia đoạn thẳng ra làm hai đoạn dài bằng nhau.";
 
     else if (FormatInput.includes("góc nội tiếp là gì?") || FormatInput.includes("Góc nội tiếp là gì?") || FormatInput.includes("góc nội tiếp là gì") || FormatInput.includes("Goc noi tiep la gi?") || FormatInput.includes("goc noi tiep la gi?") || FormatInput.includes("Góc nội tiếp là gì") || FormatInput.includes("Goc noi tiep la gi") || FormatInput.includes("goc noi tiep la gi"))
@@ -63,16 +62,16 @@ function main() {
     else if (FormatInput.includes("căn bậc hai là gì") || FormatInput.includes("Căn bậc hai là gì") || FormatInput.includes("căn bậc hai") || FormatInput.includes("căn bậc 2") || FormatInput.includes("căn bậc hai") || FormatInput.includes("can bac hai la gi") || FormatInput.includes("Can bac hai la gi") || FormatInput.includes("căn bậc hai là gì?") || FormatInput.includes("Căn bậc hai là gì?") || FormatInput.includes("can bac hai la gi?") || FormatInput.includes("Can bac hai la gi?"))
         ResponseText_val.innerHTML = "căn bậc hai của một số a là một số x sao cho x^2 = a, hay nói cách khác là số x mà bình phương lên thì = a.";
 
-    else if (FormatInput.includes("hằng đẳng thức đáng nhớ?") || FormatInput.includes("Hằng đẳng thức đáng nhớ?") || FormatInput.includes("hang dang thuc dang nho?") || FormatInput.includes("hang dang thuc dang nho?") || FormatInput.includes("hằng đẳng thức đáng nhớ") || FormatInput.includes("Hằng đẳng thức đáng nhớ") || FormatInput.includes("hang dang thuc dang nho") || FormatInput.includes("Hang dang thuc dang nho"))
+    else if (FormatInput.includes("hằng đẳng thức đáng nhớ?") || FormatInput.includes("Hằng đẳng thức đáng nhớ?") || FormatInput.includes("hằng đẳng thức") || FormatInput.includes("hang dang thuc dang nho?") || FormatInput.includes("hang dang thuc dang nho?") || FormatInput.includes("hằng đẳng thức đáng nhớ") || FormatInput.includes("Hằng đẳng thức đáng nhớ") || FormatInput.includes("hang dang thuc dang nho") || FormatInput.includes("Hang dang thuc dang nho"))
         ResponseText_val.innerHTML = "( A + B )^2 = A^2 + 2AB + B^2; ( A - B )^2 = A^2 -2AB + B^2; A^2 – B^2= ( A – B )( A + B ); ( A + B )^3 = A^3 +3A^2B + 3AB^2 + B^3; ( A - B )^3 = A^3 -3A^2B + 3AB^2 - B^3; A^3 + B^3 = ( A + B )( A^2 – AB + B^2 ); A^3 -B^3 = ( A - B )( A^2 +AB + B^2 )";
 
-    else if (FormatInput.includes("định lý talet?") || FormatInput.includes("Định lý talet?") || FormatInput.includes("dinh ly talet?") || FormatInput.includes("Dịnh ly talet?") || FormatInput.includes("định lý talet") || FormatInput.includes("Định lý talet") || FormatInput.includes("dinh ly talet") || FormatInput.includes("Dịnh ly talet"))
+    else if (FormatInput.includes("định lý talet?") || FormatInput.includes("Định lý talet?") || FormatInput.includes("ta-lét") || FormatInput.includes("talet") || FormatInput.includes("Ta-lét") || FormatInput.includes("ta-lét?") || FormatInput.includes("talet?") || FormatInput.includes("Ta-lét?") || FormatInput.includes("dinh ly talet?") || FormatInput.includes("Dịnh ly talet?") || FormatInput.includes("định lý talet") || FormatInput.includes("Định lý talet") || FormatInput.includes("dinh ly talet") || FormatInput.includes("Dịnh ly talet"))
         ResponseText_val.innerHTML = "Nếu 1 đường thẳng song song với 1 cạnh của tam giác đó và cắt 2 cạnh còn lại thì nó định ra trên 2 cạnh đó những đoạn thẳng tương ứng tỉ lệ";
 
     else if (FormatInput.includes("căn bậc ba là gì") || FormatInput.includes("Căn bậc ba là gì") || FormatInput.includes("căn bậc ba") || FormatInput.includes("căn bậc 3") || FormatInput.includes("can bac ba la gi") || FormatInput.includes("Can bac ba la gi") || FormatInput.includes("căn bậc ba là gì?") || FormatInput.includes("Căn bậc ba là gì?") || FormatInput.includes("can bac ba la gi?") || FormatInput.includes("Can bac ba la gi?"))
         ResponseText_val.innerHTML = "căn bậc ba của một số x là một số a sao cho a^3 = x";
 
-    else if (FormatInput.includes("cách học toán tốt?") || FormatInput.includes("Cách học toán tốt?") || FormatInput.includes("cach hoc toan tot?") || FormatInput.includes("Cach hoc toan tot?") || FormatInput.includes("cách học toán tốt") || FormatInput.includes("Cách học toán tốt") || FormatInput.includes("cach hoc toan tot") || FormatInput.includes("Cach hoc toan tot"))
+    else if (FormatInput.includes("cách học toán tốt?") || FormatInput.includes("Cách học toán tốt?") || FormatInput.includes("cách học") || FormatInput.includes("cach hoc toan tot?") || FormatInput.includes("Cach hoc toan tot?") || FormatInput.includes("cách học toán tốt") || FormatInput.includes("Cách học toán tốt") || FormatInput.includes("cach hoc toan tot") || FormatInput.includes("Cach hoc toan tot"))
         ResponseText_val.innerHTML = "1. Nắm chắc các lý thuyết, định nghĩa. 2.	Không học dồn. 3. Thường xuyên phát biểu trước lớp trong giờ toán. 4. Thường xuyên thực hành. 5. Vừa học vừa luyện đề";
 
     else if (FormatInput.includes("hệ thức vi-ét") || FormatInput.includes("hệ thức vi-ét?") || FormatInput.includes("hệ thức vi-ét là gì") || FormatInput.includes("hệ thức vi-ét là gì?") || FormatInput.includes("hệ thức viet?") || FormatInput.includes("Hệ thức viet?") || FormatInput.includes("he thuc viet?") || FormatInput.includes("He thuc viet?") || FormatInput.includes("hệ thức viet") || FormatInput.includes("Hệ thức viet") || FormatInput.includes("he thuc viet") || FormatInput.includes("He thuc vie?"))
@@ -84,13 +83,13 @@ function main() {
     else if (FormatInput.includes("cách tính nhẩm nhanh") || FormatInput.includes("Cách tính nhẩm nhanh") || FormatInput.includes("cach tinh nham nhanh") || FormatInput.includes("Cach tinh nham nhanh") || FormatInput.includes("cách tính nhẩm nhanh ?") || FormatInput.includes("Cách tính nhẩm nhanh ?") || FormatInput.includes("cach tinh nham nhanh ?") || FormatInput.includes("Cach tinh nham nhanh ?"))
         ResponseText_val.innerHTML = "Khi sử dụng cách tính nhẩm nhanh phép cộng hai số thì bạn nên đặt số lớn hơn trước số nhỏ rồi mới bắt đầu tính nhẩm, việc làm này giúp bạn tính nhẩm được nhanh hơn. (2 + 48 sẽ chuyển thành 48 + 2)";
 
+    else if (FormatInput.includes("hàm số bậc nhất là gì") || FormatInput.includes("Hàm số bậc nhất là gì") || FormatInput.includes("khái niệm hàm số bậc nhất") || FormatInput.includes("ham so bac nhat la gi") || FormatInput.includes("Ham so bac nhat la gi") || FormatInput.includes("hàm số bậc nhất là gì?") || FormatInput.includes("Hàm số bậc nhất là gì?") || FormatInput.includes("ham so bac nhat la gi?") || FormatInput.includes("Ham so bac nhat la gi?"))
+        ResponseText_val.innerHTML = "Hàm số bậc nhất là hàm số được cho bởi công thức y = ax + b, trong đó a, b là các số thực cho trước a ≠ 0. Để xem ví dụ về khái niệm của hàm số bạn hãy nhập vào khung trò chuyện từ khóa 'Ví dụ về hàm số bậc nhất'.";
+
     else if (FormatInput.includes("khái niệm hàm số") || FormatInput.includes("Khái niệm hàm số") || FormatInput.includes("hàm số là gì") || FormatInput.includes("hàm số là gì?") || FormatInput.includes("khai niem ham so") || FormatInput.includes("Khái niem ham so") || FormatInput.includes("khái niệm hàm số?") || FormatInput.includes("Khái niệm hàm số?") || FormatInput.includes("khai niem ham so?") || FormatInput.includes("Khái niem ham so?"))
         ResponseText_val.innerHTML = "Ta có thể hiểu hàm số như một cái máy có 1 đầu vào (in) và 1 đầu ra (out). Ta cho mỗi giá trị của x vào máy thì nó sẽ cho ra chỉ một giá trị y tương ứng. Khi đó, y được gọi là hàm số của x và x được gọi là biến số. Để xem ví dụ về khái niệm của hàm số bạn hãy nhập vào khung trò chuyện từ khóa 'Ví dụ về khái niệm hàm số'.";
 
-    else if (FormatInput.includes("hàm số bậc nhất là gì") || FormatInput.includes("Hàm số bậc nhất là gì") || FormatInput.includes("ham so bac nhat la gi") || FormatInput.includes("Ham so bac nhat la gi") || FormatInput.includes("hàm số bậc nhất là gì?") || FormatInput.includes("Hàm số bậc nhất là gì?") || FormatInput.includes("ham so bac nhat la gi?") || FormatInput.includes("Ham so bac nhat la gi?"))
-        ResponseText_val.innerHTML = "Hàm số bậc nhất là hàm số được cho bởi công thức y = ax + b, trong đó a, b là các số thực cho trước a ≠ 0. Để xem ví dụ về khái niệm của hàm số bạn hãy nhập vào khung trò chuyện từ khóa 'Ví dụ về hàm số bậc nhất'.";
-
-    else if (FormatInput.includes("Vị trí tương đối của đường thẳng và đường tròn") || FormatInput.includes("vị trí tương đối của đường thẳng và đường tròn") || FormatInput.includes("Vi tri tuong doi cua duong thang và duong tron") || FormatInput.includes("vi tri tuong doi cua duong thang va duong tron") || FormatInput.includes("Vị trí tương đối của đường thẳng và đường tròn?") || FormatInput.includes("vị trí tương đối của đường thẳng và đường tròn?") || FormatInput.includes("Vi tri tuong doi cua duong thang và duong tron?") || FormatInput.includes("vi tri tuong doi cua duong thang va duong tron?"))
+    else if (FormatInput.includes("Vị trí tương đối của đường thẳng và đường tròn") || FormatInput.includes("vị trí tương đối của đường thẳng và đường tròn") || FormatInput.includes("tương đối") || FormatInput.includes("Vi tri tuong doi cua duong thang và duong tron") || FormatInput.includes("vi tri tuong doi cua duong thang va duong tron") || FormatInput.includes("Vị trí tương đối của đường thẳng và đường tròn?") || FormatInput.includes("vị trí tương đối của đường thẳng và đường tròn?") || FormatInput.includes("Vi tri tuong doi cua duong thang và duong tron?") || FormatInput.includes("vi tri tuong doi cua duong thang va duong tron?"))
         ResponseText_val.innerHTML = "Ba trường hợp về vị trí tương đối giữa đường thẳng với đường tròn là: Đường thẳng và đường tròn cắt nhau tại hai điểm. Đường thẳng và đường tròn tiếp xúc vuông góc tại một điểm duy nhất. Đường thẳng và đường tròn không giao nhau";
 
     else if (FormatInput.includes("dấu hiệu nhận biết tiếp tuyến của đường tròn") || FormatInput.includes("Dấu hiệu nhận biết tiếp tuyến của đường tròn") || FormatInput.includes("tiếp tuyến của đường tròn") || FormatInput.includes("dau hieu nhan biet tiep tuyen cua duong tron") || FormatInput.includes("dau hieu nhan biet tiep tuyen cua duong tron") || FormatInput.includes("dấu hiệu nhận biết tiếp tuyến của đường tròn?") || FormatInput.includes("Dấu hiệu nhận biết tiếp tuyến của đường tròn?") || FormatInput.includes("dau hieu nhan biet tiep tuyen cua duong tron?") || FormatInput.includes("dau hieu nhan biet tiep tuyen cua duong tron?"))
