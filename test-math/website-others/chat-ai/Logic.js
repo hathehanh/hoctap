@@ -130,5 +130,5 @@ function main() {
         ResponseText_val.innerHTML = "mở YouTube";
         window.open("https://www.youtube.com", "_blank");
     } else
-        ResponseText_val.innerHTML = "Fox không hiểu bạn đang nói gì!";
+        ResponseText_val.innerHTML = "Fox không hiểu bạn đang nói gì! Hiện tại Fox sẽ trả lời hiệu quả những kiến thức về khái niệm trong chương trình lớp 9! Fox sẽ được phát triển hơn để làm được nhiều thứ hơn!";
 }
